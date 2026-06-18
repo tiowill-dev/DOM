@@ -4,28 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="./14-projeto-style.css">
+        <title>Convert Money</title>
+    </head>
+    <link rel="stylesheet" href="./14-projeto-style.css">
     <title>Convert Money</title>
 </head>
 
 <body>
-    <div>
-        <reader>
+    <div class="conteiner">
+        <header>
             <h1>Convert Money</h1>
-        </reader>
+        </header>
 
         <main>
             <label>
-                converter de:
+                converter <b>de</b>:
                 <select>
                     <option>R$ Real Brasileiro</option>
                 </select>
             </label>
             <label>
-                para:
+               <b>para</b>:
                 <select>
                     <option>USR$ Dolar Americano</option>
                     <option>€ Euro</option>
@@ -37,23 +45,22 @@
                 <input placeholder="R$ 10.000.00">
             </label>
             <button type="button">Converter</button>
-        </main>
-        <section></section>
+        
         <section>
-            <div>
-                <img src="./assets/brasil 2.png">
-                <p>Real Brasileiro</p>
-                <p>R$ 10.000.00</p>
+            <div class="currency-conteiner">
+                <img src="./assets/brasil 2.png" alt="bandeira-brasil">
+                <p class="currency-name">Real</p>
+                <p class="currency-value">R$ 10.000.00</p>
             </div>
-            <img src="./assets/Vector.png">
-            <div>
-                <img src="./assets/estados-unidos (1) 1.png">
-                <p>Dólar Americano</p>
-                <p>US$ 2.000.00</p>
+            <img class="arrow-img" src="./assets/Vector.png" alt="seta">
+            <div class="currency-conteiner" >
+                <img src="./assets/estados-unidos (1) 1.png" alt="bandeira-conversor">
+                <p class="currency-name">Dólar Americano</p>
+                <p class="currency-value">US$ 2.000.00</p>
             </div>
         </section>
     </div>
-
+</main>
 </body>
 
 </html>
